@@ -5,7 +5,7 @@ import org.apache.commons.configuration.Configuration;
 /**
  * Proxy class for accessing values that may change during the application is running
  *
- * @author Matthias Hryniszak <padcom@gmail.com>
+ * @author Matthias Hryniszak
  * @param <T> type of the contained value
  */
 public class Supplier<T> {
