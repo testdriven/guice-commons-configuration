@@ -2,6 +2,12 @@ package com.github.testdriven.guice.configuration;
 
 import org.apache.commons.configuration.Configuration;
 
+/**
+ * Proxy class for accessing values that may change during the application is running
+ *
+ * @author Matthias Hryniszak <padcom@gmail.com>
+ * @param <T> type of the contained value
+ */
 public class Supplier<T> {
 	private final Class<T> clazz;
 	private final String key;
@@ -19,6 +25,10 @@ public class Supplier<T> {
 		this.defaultValue = defaultValue;
 	}
 
+	/**
+	 * Returns the current value of the configuration option
+	 * @return current value of the configuration option
+	 */
 	public T get() {
 		if (configuration.containsKey(key)) {
 			if (clazz == String.class) {
@@ -41,6 +51,10 @@ public class Supplier<T> {
 		return this.clazz;
 	}
 
+	/**
+	 * Accessor for the default value
+	 * @return default value given in declaration
+	 */
 	public T getDefaultValue() {
 		return this.defaultValue;
 	}
