@@ -19,7 +19,7 @@
 	</licenses>
 
 	<scm>
-		<url>scm:git:ssh://git@github.com/testdriven/guice-commons-configuration</url>
+		<connection>scm:git:ssh://git@github.com/testdriven/guice-commons-configuration</connection>
 	</scm>
 
 	<distributionManagement>
