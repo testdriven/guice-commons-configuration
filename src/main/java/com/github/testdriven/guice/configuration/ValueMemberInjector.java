@@ -1,4 +1,4 @@
-package com.github.testdriven.guice;
+package com.github.testdriven.guice.configuration;
 
 import java.lang.reflect.Field;
 
