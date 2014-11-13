@@ -5,6 +5,11 @@ import org.apache.commons.configuration.Configuration;
 import com.google.inject.AbstractModule;
 import com.google.inject.matcher.Matchers;
 
+/**
+ * Main module to include in Guice configuration to enable injection of &amp;Value annotated values
+ *
+ * @author Matthias Hryniszak <padcom@gmail.com>
+ */
 public class CommonsConfigurationModule extends AbstractModule {
 	private final Configuration configuration;
 
