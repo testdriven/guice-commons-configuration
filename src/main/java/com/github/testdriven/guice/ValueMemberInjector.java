@@ -21,7 +21,10 @@ class ValueMemberInjector<T> implements MembersInjector<T> {
 	@Override
 	public void injectMembers(T target) {
 		try {
-			if (configuration.containsKey(key)) {
+			if (field.getType().isAssignableFrom(Supplier.class)) {
+				Supplier<?> supplier = (Supplier<?>) field.get(target);
+				field.set(target, new Supplier<T>((Class<T>) supplier.getClazz(), key, configuration, (T)supplier.getDefaultValue()));
+			} else if (configuration.containsKey(key)) {
 				if (field.getType().equals(String.class)) {
 					field.set(target, configuration.getString(key));
 				} else if (field.getType() == Integer.class) {
