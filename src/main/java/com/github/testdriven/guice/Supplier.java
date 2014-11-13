@@ -41,7 +41,7 @@ public class Supplier<T> {
 		return this.clazz;
 	}
 
-	T getDefaultValue() {
+	public T getDefaultValue() {
 		return this.defaultValue;
 	}
 }
