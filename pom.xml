@@ -5,6 +5,17 @@
 	<groupId>com.github.testdriven.guice</groupId>
 	<artifactId>commons-configuration</artifactId>
 	<version>1.0-SNAPSHOT</version>
+	<name>Guice :: Commons Configuration</name>
+	<description>Implementation of Apache commons-configuration for Guice</description>
+	<url>https://github.com/testdriven/guice-commons-configuration</url>
+
+	<developers>
+		<developer>
+			<id>padcom</id>
+			<name>Matthias Hryniszak</name>
+			<email>padcom@gmail.com</email>
+		</developer>
+	</developers>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,7 +30,9 @@
 	</licenses>
 
 	<scm>
+		<url>scm:git:ssh://git@github.com/testdriven/guice-commons-configuration</url>
 		<connection>scm:git:ssh://git@github.com/testdriven/guice-commons-configuration</connection>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
