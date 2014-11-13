@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 /**
  * Annotation for specifying that this field shall be injected from configuration
  *
- * @author Matthias Hryniszak <padcom@gmail.com>
+ * @author Matthias Hryniszak
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Value {

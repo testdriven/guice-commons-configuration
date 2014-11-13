@@ -8,7 +8,7 @@ import com.google.inject.matcher.Matchers;
 /**
  * Main module to include in Guice configuration to enable injection of &amp;Value annotated values
  *
- * @author Matthias Hryniszak <padcom@gmail.com>
+ * @author Matthias Hryniszak
  */
 public class CommonsConfigurationModule extends AbstractModule {
 	private final Configuration configuration;
